@@ -11,7 +11,9 @@
   font-style: normal;
 }
 
-
+.bg{
+    background-color: #1A0B2E;
+}
 nav{
     max-width: 1600px;
     margin: 0 auto;
@@ -19,7 +21,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #1A0B2E;
     border-bottom: 1px solid #412567;
 }
 nav>h2{
@@ -53,6 +54,7 @@ span{
     vertical-align: middle;
     cursor: pointer;
 }
+
 .header-container{
     max-width: 1600px;
     margin: 0 auto;
@@ -132,7 +134,40 @@ span{
     vertical-align: middle;
     margin-right: 10px;
 }
-
+.about{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.about-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.about-content h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.about-content p{
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.card-about{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    gap:80px;
+    margin-top: 70px;
+}
+.card-info h1{
+    color: #00FF88;
+}
+.card-info h4{
+    color: #FFFFFF;
+    font-weight: 300;
+}
 @media screen and (max-width:576px) {
     nav{
         gap: 200px;
@@ -168,7 +203,7 @@ span{
     top: 300px;
 }
 .hero-content h1{
-    margin-top: 20px;
+    margin-top: 45px;
     font-size: 1.25rem;
 }
 .hero-content p{
@@ -183,5 +218,15 @@ span{
 }
 .btn-1,.btn-2{
     white-space: nowrap;
+}
+.about-content{
+    max-width: 440px;
+    margin: 0 auto;
+}
+.card-about{
+    max-width: 440px;
+    margin: 0 auto;
+    margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
 }
 }
