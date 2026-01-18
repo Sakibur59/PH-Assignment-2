@@ -116,6 +116,18 @@ span{
     background-color: transparent;
     border: 1px solid #00FF88;
     cursor: pointer;
+    animation: transform 1s ease  infinite;
+}
+@keyframes transform {
+    0%{
+        box-shadow: 10px 10px 10px rgba(0, 128, 0, 0.315);
+    }
+    50%{
+        box-shadow: 10px 10px 10px rgba(0, 128, 0, 0.434);
+    }
+    100%{
+        box-shadow: 10px 10px 10px rgba(0, 128, 0, 0.648);
+    }
 }
 .btn-2{
     padding: 10px 12px;
@@ -149,10 +161,12 @@ span{
     font-size: 3rem;
     margin-bottom: 10px;
 }
+
 .about-content p{
     color: #FFFFFF;
     font-weight: 200;
     margin-bottom: 20px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 .card-about{
     display: grid;
@@ -160,6 +174,7 @@ span{
     justify-content: center;
     gap:80px;
     margin-top: 70px;
+    padding-bottom: 80px;
 }
 .card-info h1{
     color: #00FF88;
@@ -167,6 +182,58 @@ span{
 .card-info h4{
     color: #FFFFFF;
     font-weight: 300;
+}
+main{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #230E3D;
+}
+.choose{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.choose h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    padding-top: 30px;
+}
+.grid-span-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,200px);
+    margin-top: 60px;
+    gap: 20px;
+    
+}
+.audio{
+    grid-row: span 2;
+}
+.mobile{
+    grid-column: span 2;
+}
+.location{
+    grid-column: span 2;
+}
+.interviews{
+    grid-column: span 2;
+}
+.grid-info{
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    border-radius: 30px;
+}
+.grid-info h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.grid-info p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 100;
 }
 @media screen and (max-width:576px) {
     nav{
@@ -229,4 +296,8 @@ span{
     margin-top: 20px;
     grid-template-columns: repeat(2,1fr);
 }
+.grid-span-container{
+    grid-template-columns: repeat(1,1fr);
+}
+
 }
