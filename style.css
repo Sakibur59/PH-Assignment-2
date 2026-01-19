@@ -388,21 +388,24 @@ footer{
 }
 .hero-circle{
     position: absolute;
-    top: -200px;
-    left: 24%;
+    top: -70px;
+    left: 19%;
     right: 20%;
     width: 150px;
     height: 150px;
 }
 .microphone{
-    top:-157px;
+    top:-30px;
     width: 50px;
     height: 70px;
 }
 .new{
     position: absolute;
-    top: -200px;
-    font-size: 1rem;
+    top: -70px;
+    
+}
+.new h3{
+    font-size: .8rem;
 }
 .hero-content{
     top: 300px;
@@ -428,18 +431,36 @@ footer{
     max-width: 440px;
     margin: 0 auto;
 }
+.about-content h1{
+    font-size: 2.3rem;
+  padding-bottom: 10px;
+}
+.about-content p{
+    padding: 10px;
+    font-size: 1rem;
+}
+.about-content br{
+    display: none;
+}
+
 .card-about{
     max-width: 440px;
     margin: 0 auto;
-    margin-top: 20px;
+    padding: 20px;
     grid-template-columns: repeat(2,1fr);
 }
 .grid-span-container{
     grid-template-columns: repeat(1,1fr);
-    padding: 20px;
+    padding: 15px;
+}
+.grid-info{
+    width: 380px;
+}
+.episode h1{
+    font-size: 2rem;
 }
 .choose h1{
-    font-size: 2.5rem;
+    font-size: 1.75rem;
 }
 .video-container{
     padding: 20px;
@@ -447,6 +468,9 @@ footer{
 }
 .host{
     padding: 20px;
+}
+.host h2{
+    font-size: 2.5rem;
 }
 .host-content{
     flex-direction: column;
@@ -460,7 +484,7 @@ footer{
 }
 
 .footer-content{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .footer-content h1{
     padding-top: 60px;
@@ -468,7 +492,7 @@ footer{
 }
 .logo-container { 
     max-width: 260px;
-    margin-left: 140px;
+    margin-left: 60px;
    
 }
 
