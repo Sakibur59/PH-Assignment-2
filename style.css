@@ -261,7 +261,6 @@ main{
 }
 .video h3{
     padding: 20px;
-    max-width: 332px;
     color: #FFFFFF;
     font-size: 1.5rem;
 }
@@ -286,7 +285,56 @@ main{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-
+.host{
+    background-color: #1A0B2E;
+    padding-top: 40px;
+}
+.host h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.host h2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.host-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+}
+.alex-details h3{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px ;
+}
+.alex-details p{
+    color: #FFFFFF;
+    font-size: 1 rem;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.img-container{
+    display: flex;
+    gap: 10px;
+    
+}
+.img-container img{
+    border: 1px solid #533C72;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
 @media screen and (max-width:576px) {
     nav{
         gap: 200px;
@@ -302,20 +350,20 @@ main{
 }
 .hero-circle{
     position: absolute;
-    top: -70px;
-    left: 25%;
+    top: -200px;
+    left: 24%;
     right: 20%;
     width: 150px;
     height: 150px;
 }
 .microphone{
-    top:-30px;
+    top:-157px;
     width: 50px;
     height: 70px;
 }
 .new{
     position: absolute;
-    top: -60px;
+    top: -200px;
     font-size: 1rem;
 }
 .hero-content{
@@ -350,10 +398,26 @@ main{
 }
 .grid-span-container{
     grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+}
+.choose h1{
+    font-size: 2.5rem;
 }
 .video-container{
     padding: 20px;
     flex-direction: column;
 }
-
+.host{
+    padding: 20px;
+}
+.host-content{
+    flex-direction: column;
+    
+}
+.alex-details{
+    text-align: center;
+}
+.img-container{
+    justify-content: center;
+}
 }
