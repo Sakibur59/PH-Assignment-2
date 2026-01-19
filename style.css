@@ -204,6 +204,7 @@ main{
     grid-template-rows: repeat(3,200px);
     margin-top: 60px;
     gap: 20px;
+    margin-bottom: 60px;
     
 }
 .audio{
@@ -220,7 +221,7 @@ main{
 }
 .grid-info{
     background-color: rgba(53, 17, 101, 0.4);
-    padding: 30px;
+    padding: 20px;
     border-radius: 30px;
 }
 .grid-info h4{
@@ -235,6 +236,57 @@ main{
     font-size: 1rem;
     font-weight: 100;
 }
+.episode {
+    background-color: #1A0B2E;
+}
+.episode h1{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+.video-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.video{
+    background-color: #250D44;
+    border-radius: 20px;
+}
+.video h3{
+    padding: 20px;
+    max-width: 332px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.video p{
+    max-width: 332px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.span-container{
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+.span-container span{
+    color: #00FF88;
+}
+.video iframe{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
 @media screen and (max-width:576px) {
     nav{
         gap: 200px;
@@ -298,6 +350,10 @@ main{
 }
 .grid-span-container{
     grid-template-columns: repeat(1,1fr);
+}
+.video-container{
+    padding: 20px;
+    flex-direction: column;
 }
 
 }
